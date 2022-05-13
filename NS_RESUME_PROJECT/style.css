@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Write CSS code below */
+.main-content{
+    display: grid;
+    grid-template-columns: 300px 700px;
+    min-height: 1000px;
+    width: 90%;
+    margin: 20px auto;
+}
+.left-section{
+    grid-column: span 1;
+    background-color: lightcoral;
+}
+.left-content{
+    padding: 1rem;
+}
+.profile-image{
+    background-image: url("https://media-exp1.licdn.com/dms/image/C5603AQGp8eQvczGJLg/profile-displayphoto-shrink_400_400/0/1651333057525?e=1657756800&v=beta&t=oiMH16N5vOx-Rgj2ImUmVsn2Qj6rwu15yvMKpLxKQFo");
+    background-size: cover;
+    height: 100px;
+    width: 60%;
+    background-repeat: no-repeat;
+    display: block;
+    border: 5px solid black;
+    border-radius: 5px;
+    margin: auto;
+}
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+}
+.designation
+{
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid white;
+
+}
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+}
+.socialmedia{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+li{
+    list-style-type: none;
+    text-decoration: none;
+}
+.personaldetails{
+    margin-top: 5px;
+}
+.personaldetails div{
+    margin-bottom: 5px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+.skills{
+    font-size: 0.75rem;
+    text-align: center;
+      text-transform: uppercase;
+      padding: 1rem 0.5rem;
+}
+.skill-item{
+    margin-bottom: 10px;
+}
+.skill-name{
+    font-size: 0.65rem;
+    font-weight: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+.progress-bar{
+    border: 1px solid white;
+      height: 4px;
+      background-color: white;
+      border-radius: 6px;
+}
+.right-section{
+    grid-column:span 1/span 2;
+}
+.right-main-content{
+      padding: 2rem 3rem;
+}
+.right-title{
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      font-weight: 700;
+      padding: 0.5rem;
+      letter-spacing: 1px;
+}
+about,experience,education,project{
+      margin-bottom: 10px;
+}
+.about-para{
+      padding: 0.5rem;
+}
+.education-content{
+      display: flex;
+      justify-content: space-between;
+      padding-left: 0.5rem;
+}
+.secondary{
+      margin-top: 10px;
+}
+.higher-secondary{
+      margin-top: 3.2rem;
+}
+.secondary h3, .higher-secondary h3{
+      margin-bottom: 10px;
+}
+.degree-section{
+      padding-bottom: 5px;
+      width: 82%;
+}
+.school{
+      width: 30%;
+}
+.degree-title{
+      font-size: 1rem;
+      margin-bottom: 5px;
+      font-weight: 580;
+}
+.sub-title{
+      font-size: 0.8rem;
+      margin-bottom: 10px;
+}
+.sub-para{
+      font-size: 0.8rem;
+      font-weight: 700;
+}
+.experience-para{
+      width: 90%;
+}
+.project{
+      width:98%;
+}
+.company{
+      width: 18%;
+}
+@media screen and (min-width: 0px) and (max-width: 673px) {
+      .main-content{
+          display:grid;
+          grid-template-columns: repeat(1,1fr);
+      }
+      
+}
